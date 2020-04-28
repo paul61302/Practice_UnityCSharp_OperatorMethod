@@ -202,7 +202,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 366460354}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 414766939}
+        m_MethodName: S_be_ATK
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &366460354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,27 +324,56 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: e6fbc17a26995124688d1b0f2e2a845b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a300b93764f24c94b9ddb3445d906548, type: 3}
---- !u!1 &407480920 stripped
+--- !u!1 &414766938
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000012081666484, guid: a300b93764f24c94b9ddb3445d906548,
-    type: 3}
-  m_PrefabInstance: {fileID: 407480919}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &407480921
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 414766940}
+  - component: {fileID: 414766939}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &414766939
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 407480920}
+  m_GameObject: {fileID: 414766938}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a19eb4db1384484eb3504f6f1919caa, type: 3}
+  m_Script: {fileID: 11500000, guid: 28aa824f7d17469459455ce4c99b7bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 200
-  Atk: 20
-  Health: 20
+  B_HP: 200
+  B_ATK: 20
+  B_HEAL: 10
+  S_HP: 300
+  S_ATK: 10
+  S_HEAL: 20
+  result: {fileID: 1105766885}
+--- !u!4 &414766940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414766938}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.247612, y: 0.16686717, z: 0.34969157}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &457743844
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +455,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 457743847}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 414766939}
+        m_MethodName: S_be_HEAL
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &457743847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -713,7 +764,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 681412256}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 414766939}
+        m_MethodName: B_be_HEAL
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &681412256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1387,7 +1449,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1864469991}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 414766939}
+        m_MethodName: B_be_ATK
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1864469991
 MonoBehaviour:
   m_ObjectHideFlags: 0
